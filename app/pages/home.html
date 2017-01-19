@@ -1,0 +1,66 @@
+<div style="display: flex;">
+    <button class="main-folder" ng-click="goToFolder('')" ng-cloak></button>
+</div>
+<div class="angle-wrapper">
+    <div ng-repeat="node in rootData.data.children track by $index" ng-cloak>
+        <div ng-style="setAngles($index)">
+            <button ng-if="node.type===0" ng-class="(node.type === 0 ? 'folder-style' : 'picture-style')" ng-click="goToFolder(node.label)"></button>
+                <a ng-click="setChosenImg($index)" href='#pictures' ng-if="node.type===1">
+                    <button class="picture-style" ></button>
+                </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!--<div style="display: flex;">-->
+    <!--<a class="main-folder" ng-click="goToFolder('')"></a>-->
+<!--</div>-->
+<!--<div class="items-wrapper" ng-repeat="row in rowsToRepeat">-->
+    <!--<div class="angle-wrapper">-->
+        <!--<div ng-repeat="node in rootData.data.children track by $index" class="circle-container">-->
+            <!--<div ng-style="setAngles($index)">-->
+                <!--<h4 ng-style="setAngles($index)" ng-if="node.type===0" ng-class="(node.type === 0 ? 'folder-style' : 'picture-style')" ng-click="goToFolder(node.label)"></h4>-->
+                <!--<a ng-click="setChosenImg($index)" href='#pictures' ng-if="node.type===1">-->
+                    <!--<h4 class="picture-style" ></h4>-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div style="display: flex;">
+    <a class="main-folder" ng-click="goToFolder('')"></a>
+</div>
+<div class="items-wrapper" ng-repeat="row in rowsToRepeat">
+    <div class="angle-wrapper">
+        <div ng-repeat="node in rootData.data.children track by $index">
+            <div ng-if="isFromCurrentFive($index,row)" ng-style="setAngles($index)">
+                <h4 ng-if="node.type===0" ng-class="(node.type === 0 ? 'folder-style' : 'picture-style')" ng-click="goToFolder(node.label)"></h4>
+                    <a ng-click="setChosenImg($index)" href='#pictures' ng-if="node.type===1">
+                        <h4 class="picture-style" ></h4>
+                    </a>
+            </div>
+        </div>
+    </div>
+</div>-->

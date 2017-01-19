@@ -1,0 +1,10 @@
+<div class="picture-container">
+    <div class="picture-wrapper">
+        <view class="main-image">
+            <img class="big-image" src="{{imgObj.url}}" alt="Requested image does not exist"/>
+            <view class="picture-offer" ng-repeat="photo in photoData" ng-cloak>
+                <img class="small-image"src="{{photo.url}}" ng-click="switchPhoto(photo)"/>
+            </view>
+        </view>
+    </div>
+</div>

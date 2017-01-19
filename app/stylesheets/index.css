@@ -1,0 +1,179 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.folder-style {
+    background-color: lightgray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.picture-style {
+    background-color: lightblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main-link {
+    border-radius: 50%;
+    background-color: darkgray;
+    width: 120px;
+    height: 120px;
+    display: inherit;
+    text-align: center;
+}
+
+.main-folder {
+    border-radius: 50%;
+    background-color: darkgray;
+    width: 120px;
+    height: 120px;
+}
+
+.items-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.angle-wrapper {
+    position: relative;
+    width: 24em;
+    display: flex;
+    flex-direction: inherit;
+    direction: rtl;
+}
+
+.picture-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.picture-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image {
+    width: 50%;
+    height: 500px;
+}
+
+.big-image {
+    width: 100%;
+    height: 500px;
+}
+
+.picture-offer {
+    width: 10%;
+    cursor: pointer;
+}
+
+.small-image {
+    width: 18%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.folder-style {
+    background-color: lightgray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.picture-style {
+    background-color: lightblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.main-link {
+    border-radius: 50%;
+    background-color: darkgray;
+    color: white;
+    width: 120px;
+    height: 120px;
+    display: inherit;
+    text-align: center;
+    position: absolute;
+    left: 20%;
+}
+
+.main-folder {
+    border-radius: 50%;
+    background-color: darkgray;
+    width: 120px;
+    height: 120px;
+}
+
+.items-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.angle-wrapper {
+    position: relative;
+    width: 24em;
+    display: flex;
+    flex-direction: inherit;
+    direction: rtl;
+}
+
+.picture-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.picture-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image {
+    width: 50%;
+    height: 500px;
+}
+
+.big-image {
+    width: 100%;
+    height: 500px;
+}
+
+.picture-offer {
+    width: 10%;
+    cursor: pointer;
+}
+
+.small-image {
+    width: 18%;
+}*/
