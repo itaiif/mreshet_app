@@ -1,0 +1,24 @@
+<h1 class="description">{{data.description}}</h1>
+<h1 class="sensors-label">{{data.sensorLabel}}</h1>
+<img class="arrow" src="{{data.arrow}}" />
+
+<view id="my-basket" ad-drop="true" ad-drop-over="onDragOver($data, $dragElement, $dropElement, $event);" ad-drop-leave="onDragLeave($data, $dragElement, $dropElement, $event)"
+    ad-drop-end="onDrop($data, $dragElement, $dropElement, $event);">
+    <p class="input-wrapper" ad-drag="true" ad-drag-data="sensor" ad-drag-begin="onDragStart($data, $dragElement, $event);" ad-drag-end="onDragEnd($data, $dragElement, $lastDropElement, $event);"
+        ng-repeat="sensor in data.sensors">
+        {{sensor.name}}
+    </p>
+</view>
+
+<h1 class="instruction-label">{{data.instruction}}</h1>
+
+<view class="basket-wrapper">
+    <view id="my-basket" class="my-basket" ad-drop="true" ad-drop-over="onDragOver($data, $dragElement, $dropElement, $event);"
+        ad-drop-leave="onDragLeave($data, $dragElement, $dropElement, $event)" ad-drop-end="onDrop($data, $dragElement, $dropElement, $event);">
+        <p ng-class="isDroped()" ad-drag="true" ad-drag-data="element" ad-drag-begin="onDragStart($data, $dragElement, $event);"
+            ad-drag-end="onDragEnd($data, $dragElement, $lastDropElement, $event);" ng-repeat="element in favourits.basket">
+            {{element.name}}
+        </p>
+        <p class="input-wrapper-droped" ng-style="favourits.basket[0].name !== '' ? { 'width':'50vw'} : { 'width': 'auto' }" ng-hide="favourits.basket.length">Drop Here</p>
+    </view>
+</view>

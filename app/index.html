@@ -3,20 +3,33 @@
 
 <head>
     <link rel="stylesheet" href="stylesheets/index.css">
-    <script type="text/javascript" src="../jquery-3.1.1.min.js"></script>
+     <script type="text/javascript" src="../jquery-3.1.1.min.js"></script>
     <script src="../angular.min.js"></script>
     <script src="../angular-route.js"></script>
     <script src="main.js"></script>
-    <script src="controllers/home_ctl.js"></script>
-    <script src="controllers/pictures_ctl.js"></script>
+    <script src="controllers/main_ctl.js"></script>
+    <script src="../angular-sanitize.js"></script>
+    <script src="../adapt-strap.js"></script>
+    <script src="../adapt-strap.tpl.js"></script>
+    <link rel="stylesheet" href="../adapt-strap.css" />
     <script src="../lodash.js"></script>
 </head>
 
 <body>
-    <div id="main">
-        <a href="#home"><button class="main-link" href="#home">root</button></a>
-        <div ng-view style="display: flex; justify-content: center; flex-direction: column;" ng-cloak></div>
-    </div>
+    <header class="header">
+        <h1 class="main-title">מה הוא Arduino?</h1>
+    </header>
+    <view id="main">
+        <div ng-view class="view" ng-cloak></div>
+    </view>
+    <footer class="footer">
+        <view class="white-circle-footer">
+            <view class="black-line-footer"></view>
+        </view>
+        <img style="float: left; padding-top: 2%;" src="assets/images/back.png"/>
+        <img style="float: right; padding-top: 2%;" src="assets/images/next.png"/>
+        <img class="arduino-img" src="assets/images/arduino.png"/>
+    </footer>
 </body>
 
 </html>

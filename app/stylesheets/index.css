@@ -1,179 +1,111 @@
+
 body {
-    width: 100%;
-    height: 100%;
-}
-
-.folder-style {
-    background-color: lightgray;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.picture-style {
-    background-color: lightblue;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.main-link {
-    border-radius: 50%;
-    background-color: darkgray;
-    width: 120px;
-    height: 120px;
-    display: inherit;
-    text-align: center;
-}
-
-.main-folder {
-    border-radius: 50%;
-    background-color: darkgray;
-    width: 120px;
-    height: 120px;
-}
-
-.items-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.angle-wrapper {
-    position: relative;
-    width: 24em;
-    display: flex;
-    flex-direction: inherit;
     direction: rtl;
 }
 
-.picture-container {
+.header {
+    height: 15vh;
+    background-color: #057372;
+    box-shadow: 0px 2px 4px 0px;
+}
+
+.main-title {
+    padding: 65px 50px 25px 0;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    width: auto;
+}
+
+.view {
+    padding: 0 50px 50px 50px;
+}
+
+.sensors-label {
+    color: #057372;
+}
+
+.basket-wrapper {
     display: flex;
     justify-content: center;
-    flex-direction: column;
 }
 
-.picture-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.instruction-label {
+    color: #057372;
 }
 
-.main-image {
-    width: 50%;
-    height: 500px;
+.arrow {
+    float: left;
 }
 
-.big-image {
-    width: 100%;
-    height: 500px;
+.input-wrapper {
+    border-radius: 10px;
+    background-color: #057372;
+    margin: 10px;
+    padding: 1%;
+    display: inline-block;
+    color: #FFFFFF;
 }
 
-.picture-offer {
-    width: 10%;
-    cursor: pointer;
-}
-
-.small-image {
-    width: 18%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-body {
-    width: 100%;
-    height: 100%;
-}
-
-.folder-style {
-    background-color: lightgray;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.picture-style {
-    background-color: lightblue;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.main-link {
-    border-radius: 50%;
-    background-color: darkgray;
-    color: white;
-    width: 120px;
-    height: 120px;
-    display: inherit;
+.input-wrapper-droped {
+    border-radius: 10px;
+    border: 1px solid #057372;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    color: rgba(5,115,114,0.6);
     text-align: center;
+}
+
+.input-wrapper-after-droped {
+    border-radius: 10px;
+    background-color: #057372;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.drop-input {
+    width: 100vw;
+    border: none;
+    text-align: center;
+    height: 50vh;
+}
+
+.black-line-footer {
+    background-color: white;
+    width: 99%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 50%;
+    border-bottom: 2px solid black;
+    z-index: 2;
     position: absolute;
-    left: 20%;
+    top: -7px;
 }
 
-.main-folder {
-    border-radius: 50%;
-    background-color: darkgray;
-    width: 120px;
-    height: 120px;
-}
-
-.items-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.angle-wrapper {
+.footer {
+    height: 15vh;;
+    background-color: #057372;
     position: relative;
-    width: 24em;
-    display: flex;
-    flex-direction: inherit;
-    direction: rtl;
 }
 
-.picture-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.picture-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main-image {
-    width: 50%;
-    height: 500px;
-}
-
-.big-image {
+.white-circle-footer {
+    height: 15%;
+    background-color: white;
     width: 100%;
-    height: 500px;
+    display: inline-block;
+    border-radius: 50%;
+    border-bottom: 2px solid #FFFFFF;
+    z-index: 1;
+    position: absolute;
+    top: -8%;
 }
 
-.picture-offer {
-    width: 10%;
-    cursor: pointer;
+.arduino-img {
+    position: absolute;
+    bottom: 0;
+    left: 48.5%;
 }
-
-.small-image {
-    width: 18%;
-}*/
